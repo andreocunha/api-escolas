@@ -315,16 +315,16 @@ let dados = [
 ]
 
 export default (req, res) => {
-  console.log(req.query)
-    if(req.query.nome === 'es'){
-        res.status(200).json(dados);
-    }
-    let i;
-    for(i = 0; i < 78; i++){
-        if(req.query.nome === dados[i]["cidade"]){
-            console.log(dados[i]["cidade"]);
-            res.status(200).json(dados[i]);
-        }
-    }
-    res.status(200).json({});
+  // console.log(req.query)
+  //   if(req.query.nome === 'es'){
+  //       res.status(200).json(dados);
+  //   }
+  //   let i;
+  //   for(i = 0; i < 78; i++){
+  //       if(req.query.nome === dados[i]["cidade"]){
+  //           console.log(dados[i]["cidade"]);
+  //           res.status(200).json(dados[i]);
+  //       }
+  //   }
+    res.status(200).json(dados);
 }
